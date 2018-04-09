@@ -14,7 +14,7 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
-  database: jobBoard_development
+  database: jobs_development
   username: jobs
   password: <%= ENV['DB_PASSWORD'] %>
 
@@ -24,13 +24,13 @@ development:
 test:
   <<: *default
   adapter: postgresql
-  database: jobBoard_test
+  database: jobs_test
   username: jobs
   password: <%= ENV['DB_PASSWORD'] %>
 
 production:
   <<: *default
   adapter: postgresql
-  database: jobBoard_production
+  database: jobs_production
   username: jobs
   password: <%= ENV['DB_PASSWORD'] %>
