@@ -1,0 +1,38 @@
+version: '2'
+services:
+  db:
+    image: 'postgres:alpine'
+    environment:
+      - POSTGRES_PASSWORD
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+
+  app: &app_base
+    build: .
+    environment:
+      - SECRET_KEY_BASE
+      - DB_HOST=db
+      - DB_USER
+      - DB_PASSWORD
+      - RAILS_ENV
+      - RAILS_MAX_THREADS
+      - APP_HOST
+      - APP_ADMIN_EMAIL
+      - APP_ADMIN_PASSWORD
+      - APP_EMAIL
+      - SMTP_SERVER
+      - SMTP_PORT
+      - SMTP_DOMAIN
+      - SMTP_USERNAME
+      - SMTP_PASSWORD
+      - SMTP_AUTHENTICATION
+      - SMTP_ENABLE_STARTTLS_AUTO
+    ports:
+      - "80"
+    links:   
+      - db
+
+  
+volumes:
+  db-data:
+  es-data:
