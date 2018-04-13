@@ -6,13 +6,9 @@
 # stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 #
-development :
-  stripe_api_key: sk_test_8InElYumqplujiTczOJDkTdY
-  stripe_publishable_key: pk_test_kiHNC5vzFBpS5sZjpLSIE3Sz
 
-production:
-  stripe_api_key: sk_test_8InElYumqplujiTczOJDkTdY
-  stripe_publishable_key: pk_test_kiHNC5vzFBpS5sZjpLSIE3Sz
+stripe_api_key: sk_test_8InElYumqplujiTczOJDkTdY
+stripe_publishable_key: pk_test_kiHNC5vzFBpS5sZjpLSIE3Sz
 
 db_password: password
 
