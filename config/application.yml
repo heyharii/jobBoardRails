@@ -14,7 +14,7 @@ production:
   stripe_api_key: sk_test_8InElYumqplujiTczOJDkTdY
   stripe_publishable_key: pk_test_kiHNC5vzFBpS5sZjpLSIE3Sz
 
-   db_password: password
+db_password: password
 
 production:
   db_password: password
